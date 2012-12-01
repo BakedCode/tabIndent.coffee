@@ -2,7 +2,7 @@
 
 	class TabIndent
 	
-		@version:	0.1.0
+		@version:	"0.1.0"
 		@newLine:	/\n/
 		@autobind:	( selector = ".tabIndent" ) ->
 			
