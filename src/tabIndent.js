@@ -14,7 +14,7 @@
         selector = ".tabIndent";
       }
       if (typeof selector === "string") {
-        $(document.body).on("focus.tabIndent", "" + selector, function(e) {
+        $(document.body).on("focus.tabIndent", selector, function(e) {
           var $el;
           $el = $(e.currentTarget);
           if (!$el.data('tabIndent')) {
@@ -34,7 +34,7 @@
         selector = ".tabIndent";
       }
       if (typeof selector === "string") {
-        $(document.body).off("focus.tabIndent", "" + selector);
+        $(document.body).off("focus.tabIndent", selector);
         return this;
       } else {
         throw new SyntaxError("Invalid selector.");
