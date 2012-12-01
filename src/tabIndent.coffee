@@ -8,7 +8,7 @@
 			
 			if typeof selector == "string"
 					
-				$( document.body ).on "focus.tabIndent", "#{selector}", ( e ) =>
+				$( document.body ).on "focus.tabIndent", selector, ( e ) =>
 					
 					$el = $ e.currentTarget
 					
@@ -25,7 +25,7 @@
 			
 			if typeof selector == "string"
 					
-				$( document.body ).off "focus.tabIndent", "#{selector}"
+				$( document.body ).off "focus.tabIndent", selector
 				
 				return @
 							
